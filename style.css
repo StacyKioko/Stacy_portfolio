@@ -11,7 +11,8 @@ body {
 
 #navbar {
     margin-top: 50px;
-    margin-left: 500px;
+    display: flex;
+    justify-content: center;
     
 }
 ul {
