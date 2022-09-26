@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -130,7 +131,7 @@ p {
 #div-img {
     width: 300px;
     height: 300px;
-    background: url(Profile1.jpg);
+    background: url(images/Profile1.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -153,6 +154,9 @@ p {
     letter-spacing: 1px;
 }
 
+.p-two {
+    letter-spacing: 0.5px;
+}
 .about-link {
     color:wheat;
 }
@@ -160,6 +164,174 @@ p {
 .about-link:hover {
     color:red;
 }
+
+.h-project {
+    display: flex;
+    color: wheat;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.h1_project {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#project-div {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+.maincontainer {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-between;
+    border-radius: 5px;
+       
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1.0s ease;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: wheat;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+.one {
+    background-image: url(images/valentin-balan-k0aVMMZwqtU-unsplash.jpg);
+}
+
+.two {
+    background-image: url(images/clement-helardot-95YRwf6CNw8-unsplash\ \(1\).jpg);
+}
+
+.three {
+    background-image: url(images/le-buzz-KiEiI2b9GkU-unsplash.jpg);
+}
+
+.four {
+    background-image: url(images/cytonn-photography-GJao3ZTX9gU-unsplash.jpg);
+}
+
+h4 {
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.back-description {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+    padding:  0px 10px 0px 10px;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+.pr-buttons {
+    display: flex;
+    justify-content: left;
+}
+.live-code, .live-page {
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 15px 10px;
+    background-color: transparent;
+    border: 1px solid rgb(70, 18, 12);
+    cursor: pointer;
+}
+
+.live-code:hover, .live-page:hover {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 6px;
+    margin: 10px 20px;
+    background-color: rgb(70, 18, 12);
+    border: 1px solid rgb(70, 18, 12);
+    cursor: pointer;
+}
+
+.code-link, .page-link {
+    color: black;
+}
+
+.code-link:hover, .page-link:hover {
+    color: white;
+}
+
+
+.pr-h3 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#pr-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#project_button {
+    padding: 5px 15px 5px 15px;
+    width: 120px;
+    background-color: wheat;
+    color: black;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-family: raleway, sans-serif;
+    letter-spacing: 1px;
+}
+
+#project_button:hover {
+    padding: 5px 15px 5px 15px;
+    width: fit-content;
+    font-size: 18px;
+    background-color: rgb(70, 18, 12);
+    color: wheat;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+   
+
 
 /* Tablet view */
 
@@ -223,11 +395,11 @@ p {
 
     #div-img {
         display: none;
-}
+    }
 
-#h-about {
-    margin-bottom: 20px;
-}
+    #h-about {
+        margin-bottom: 20px;
+    }
 
 
     #div-about {
@@ -242,6 +414,144 @@ p {
         margin-right: 100px;
         text-align: center; 
 
+    }
+
+    .h1_project {
+        color: wheat;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    #project-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .maincontainer {
+        position: relative;
+        width: 500px;
+        height: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;  
+        margin-bottom: 30px;  
+    }
+    
+    .thecard {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 1.0s ease;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+    
+    }
+    
+    .thecard:hover {
+        transform: rotateY(180deg);
+    }
+    
+    .thefront {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        
+    }
+    
+    .theback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: wheat;
+        color: black;
+        font-size: 30px;
+        transform: rotateY(180deg);
+        border-radius: 5px;
+        padding: 15px;
+    }
+    
+    .back-description {
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: 3px;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .pr-buttons {
+        display: flex;
+        justify-content: left;
+    }
+    .live-code, .live-page {
+        padding: 8px 20px;
+        border-radius: 6px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 20px 15px;
+        background-color: transparent;
+        border: 1px solid rgb(70, 18, 12);
+        cursor: pointer;
+    }
+    
+    .live-code:hover, .live-page:hover {
+        padding: 5px 20px;
+        color: white;
+        border-radius: 6px;
+        font-size: 18px;
+        margin: 10px 20px;
+        background-color: rgb(70, 18, 12);
+        border: 1px solid rgb(70, 18, 12);
+        cursor: pointer;
+    }
+
+    .one {
+        background-image: url(images/valentin-balan-k0aVMMZwqtU-unsplash.jpg);
+        background-size: cover;
+    }
+
+    .two {
+        background-image: url(images/clement-helardot-95YRwf6CNw8-unsplash\ \(1\).jpg);
+        background-size: cover;
+    }
+
+    .three {
+        background-image: url(images/le-buzz-KiEiI2b9GkU-unsplash.jpg);
+        background-size: cover;
+    }
+
+    .four {
+        background-image: url(images/cytonn-photography-GJao3ZTX9gU-unsplash.jpg);
+        background-size: cover;
+    }
+
+    
+
+
+    h4 {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .icons {
+        margin: 15px 10px 10px 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-code {
+        font-size: 12px;
+        margin: 5px 15px 10px 20px;
+        text-transform: lowercase;
+        text-align: center;
     }
 }
 
@@ -268,7 +578,7 @@ p {
     #CV {
         width: 120px;
         font-size: 12px;
-        letter-spacing: 0px;
+        letter-spacing: 1px;
     }
 
     #CV:hover {
@@ -293,6 +603,7 @@ p {
         text-align: center;
         color: whitesmoke;
         font-size: 13px;
+        line-height: 40px;
         margin: auto;
     }
 
@@ -311,8 +622,8 @@ p {
         display: none;
 }
 
-#h-about {
-    margin-bottom: 20px;
+    #h-about {
+        margin-bottom: 20px;
 }
 
 
@@ -328,5 +639,167 @@ p {
         margin-right: 30px;
         text-align: center; 
 
+
+    }
+    .h1_project {
+        color: wheat;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    #project-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .maincontainer {
+        position: relative;
+        width: 300px;
+        height: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;  
+        margin-bottom: 30px;  
+    }
+    
+    .thecard {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 1.0s ease;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+    
+    }
+    
+    .thecard:hover {
+        transform: rotateY(180deg);
+    }
+    
+    .thefront {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 5px;
+        
+    }
+    
+    .theback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: wheat;
+        color: black;
+        transform: rotateY(180deg);
+        border-radius: 5px;
+    }
+    
+    .one {
+        background-image: url(images/valentin-balan-k0aVMMZwqtU-unsplash.jpg);
+    }
+    
+    .two {
+        background-image: url(images/clement-helardot-95YRwf6CNw8-unsplash\ \(1\).jpg);
+    }
+
+    .three {
+        background-image: url(images/le-buzz-KiEiI2b9GkU-unsplash.jpg);
+    }
+    
+    .four {
+        background-image: url(images/cytonn-photography-GJao3ZTX9gU-unsplash.jpg);
+    }
+
+    
+
+    h4 {
+        text-align: center;
+        margin: 10px 10px;
+    }
+    
+    .back-description {
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: left;
+        padding:  0px 10px 0px 10px;
+        letter-spacing: 1px;
+        line-height: 15px;
+    }
+    
+    .pr-buttons {
+        display: flex;
+        justify-content: left;
+    }
+    .live-code, .live-page {
+        padding: 5px 10px;
+        border-radius: 6px;
+        margin: 15px 10px;
+        background-color: transparent;
+        border: 1px solid rgb(70, 18, 12);
+        cursor: pointer;
+    }
+    
+    .live-code:hover, .live-page:hover {
+        padding: 5px 10px;
+        color: white;
+        border-radius: 6px;
+        margin: 10px 20px;
+        background-color: rgb(70, 18, 12);
+        border: 1px solid rgb(70, 18, 12);
+        cursor: pointer;
+    }
+    
+    .code-link, .page-link {
+        color: black;
+    }
+    
+    .code-link:hover, .page-link:hover {
+        color: white;
+    }
+    
+    
+    .pr-h3 {
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    #pr-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #project_button {
+        padding: 5px 15px 5px 15px;
+        width: 120px;
+        background-color: wheat;
+        color: black;
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 6px;
+        font-family: raleway, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    #project_button:hover {
+        padding: 5px 15px 5px 15px;
+        width: fit-content;
+        font-size: 18px;
+        background-color: rgb(70, 18, 12);
+        color: wheat;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 6px;
     }
 }
