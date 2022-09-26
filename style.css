@@ -314,7 +314,7 @@ h4 {
     background-color: wheat;
     color: black;
     font-size: 15px;
-    border: 1px solid white;
+    border: 1px solid wheat;
     border-radius: 6px;
     font-family: raleway, sans-serif;
     letter-spacing: 1px;
@@ -327,7 +327,7 @@ h4 {
     background-color: rgb(70, 18, 12);
     color: wheat;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid wheat;
     border-radius: 6px;
 }
    
@@ -571,6 +571,7 @@ h4 {
         font-size: 15px;
         margin-top: 0px;
         letter-spacing: 1px;
+        line-height: 50px;
     }
     #navbar {
         display: none;
@@ -786,7 +787,7 @@ h4 {
         background-color: wheat;
         color: black;
         font-size: 15px;
-        border: 1px solid white;
+        border: 1px solid wheat;
         border-radius: 6px;
         font-family: raleway, sans-serif;
         letter-spacing: 1px;
@@ -799,7 +800,7 @@ h4 {
         background-color: rgb(70, 18, 12);
         color: wheat;
         cursor: pointer;
-        border: 1px solid white;
+        border: 1px solid wheat;
         border-radius: 6px;
     }
 }
