@@ -51,9 +51,12 @@ a {
     letter-spacing: 1px;
 }
 
-span {
-    font-weight: bold;
+.title {
     color: rgb(70, 18, 12);
+}
+
+.bold {
+    font-weight: bold;
 }
 
 
@@ -184,7 +187,7 @@ p {
     justify-content: space-between;
     justify-items: center;
     margin: 15px;
-    margin-bottom: 30px;
+    margin: 30px 30px;
 }
 
 .maincontainer {
@@ -313,29 +316,179 @@ h4 {
     width: 120px;
     background-color: wheat;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: bold;
     border: 1px solid wheat;
-    border-radius: 6px;
     font-family: raleway, sans-serif;
+    text-align: center;
     letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+#project_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+#project_button span:after {
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+#project_button:hover span {
+    padding-right: 25px;
+}
+  
+#project_button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 #project_button:hover {
-    padding: 5px 15px 5px 15px;
+    padding-right: 20px;
     width: fit-content;
     font-size: 18px;
     background-color: rgb(70, 18, 12);
     color: wheat;
     cursor: pointer;
-    border: 1px solid wheat;
-    border-radius: 6px;
+    border: 1px solid white;
 }
-   
+.footer {
+    width: 100%;
+    background-color: #372c19;
+    height: 100%;
+    padding: 20px 50px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
 
+.address {
+    line-height: 1em;
+    margin-top: 10px;
+    border-right: 2px solid wheat;
+    padding-right: 150px;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+
+.contact {
+    line-height: 1em;
+    margin-top: 10px;
+    border-right: 2px solid wheat;
+    padding-right: 100px;
+    margin-bottom: 40px;
+    height: 200px;
+}
+
+.platform {
+    padding: 0px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 0;
+    font-size: 15px;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+    display: inline;
+    color:aquamarine;
+    text-decoration: none;
+    }
+    
+.platform:hover {
+    text-align: center;
+    color:red;
+    border-radius: 6px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.h-footer {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+}
+
+.p-footer {
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.name {
+    display: block;
+}
+
+#name::placeholder {
+    display: block;
+    font-family: raleway, sans-serif;
+    color: white;
+    opacity: 0.7;
+}
+
+#email::placeholder {
+    display: block;
+    font-family: raleway, sans-serif;
+    color: white;
+    opacity: 0.7;
+}
+
+.message::placeholder {
+    display: block;
+    font-family: raleway, sans-serif;
+    color: white;
+    opacity: 0.7;
+}
+
+.message {
+    display: block;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: whitesmoke;
+    font-family: Raleway, sans-serif;
+    width: 100%;
+}
+textarea {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: raleway, sans-serif;
+}
+
+.submit {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    color: white;
+    font-family: raleway, sans-serif;
+    opacity: 0.7;
+}
+
+.submit:hover {
+    background-color: rgb(70, 18, 12);
+    color: whitesmoke;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid rgb(70, 18, 12);
+}
 
 /* Tablet view */
 
-@media  (min-width: 604px) and (max-width: 1280px) {
+@media  (min-width: 640px) and (max-width: 1280px) {
     body {
         box-sizing: border-box;
         letter-spacing: 0px;
@@ -532,10 +685,7 @@ h4 {
         background-image: url(images/cytonn-photography-GJao3ZTX9gU-unsplash.jpg);
         background-size: cover;
     }
-
     
-
-
     h4 {
         text-align: center;
         margin-top: 15px;
@@ -553,6 +703,135 @@ h4 {
         text-transform: lowercase;
         text-align: center;
     }
+    .footer {
+        width: 100%;
+        background-color: #372c19;
+        height: 100%;
+        padding: 20px 50px;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    
+    .address {
+        line-height: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 1px solid wheat;
+        padding: 20px 40px;
+        height: 180px;
+
+    }
+    
+    
+    .contact {
+        line-height: 2em;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        letter-spacing: 3px;
+        padding-bottom: 40px;
+        border: 1px solid wheat;
+        padding: 20px 40px;
+        height: 180px;
+    }
+    
+    .platform {
+        padding: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 0;
+        font-size: 15px;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 1px;
+        display: inline;
+        color:aquamarine;
+        text-decoration: none;
+        }
+        
+    .platform:hover {
+        text-align: center;
+        color:red;
+        border-radius: 6px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .h-footer {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .p-footer {
+        line-height: 1.5em;
+        font-size: 15px;
+    }
+    
+    .name {
+        display: block;
+    }
+    #name::placeholder {
+        display: block;
+        font-family: raleway, sans-serif;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    #email::placeholder {
+        display: block;
+        font-family: raleway, sans-serif;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    .message::placeholder {
+        display: block;
+        font-family: raleway, sans-serif;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    .message {
+        display: block;
+    }
+    
+    input {
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: whitesmoke;
+        font-family: Raleway, sans-serif;
+        width: 100%;
+    }
+    textarea {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-family: raleway, sans-serif;
+    }
+    
+    .submit {
+        margin-top: 10px;
+        padding: 5px 15px;
+        border-radius: 6px;
+        color: white;
+        font-family: raleway, sans-serif;
+        opacity: 0.7;
+    }
+    
+    .submit:hover {
+        background-color: rgb(70, 18, 12);
+        color: wheat;
+        font-size: 18px;
+        cursor: pointer;
+        border: 1px solid rgb(70, 18, 12);
+    }
+    
 }
 
 /* Mobile view */
@@ -571,7 +850,7 @@ h4 {
         font-size: 15px;
         margin-top: 0px;
         letter-spacing: 1px;
-        line-height: 40px;
+        line-height: 50px;
     }
     #navbar {
         display: none;
@@ -802,5 +1081,135 @@ h4 {
         cursor: pointer;
         border: 1px solid wheat;
         border-radius: 6px;
+    }
+    .footer {
+        width: 100%;
+        background-color: #372c19;
+        height: 100%;
+        padding: 20px 50px;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    
+    .address {
+        line-height: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid wheat;
+        padding-bottom: 40px;
+        border-right:0;
+        width: 500px;
+
+    }
+    
+    
+    .contact {
+        line-height: 2em;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        letter-spacing: 3px;
+        border-bottom: 2px solid wheat;
+        padding-bottom: 40px;
+        border-right:0;
+        width: 500px;
+    }
+    
+    .platform {
+        padding: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 0;
+        font-size: 15px;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 1px;
+        display: inline;
+        color:aquamarine;
+        text-decoration: none;
+        }
+        
+    .platform:hover {
+        text-align: center;
+        color:red;
+        border-radius: 6px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    
+    .h-footer {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .p-footer {
+        line-height: 1.5em;
+        font-size: 15px;
+    }
+    
+    .name {
+        display: block;
+    }
+    #name::placeholder {
+        display: block;
+        font-family: raleway, sans-serif;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    #email::placeholder {
+        display: block;
+        font-family: raleway, sans-serif;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    .message::placeholder {
+        display: block;
+        font-family: raleway, sans-serif;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    .message {
+        display: block;
+    }
+    
+    input {
+        padding: 5px;
+        margin-bottom: 5px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: whitesmoke;
+        font-family: Raleway, sans-serif;
+        width: 100%;
+    }
+    textarea {
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-family: raleway, sans-serif;
+    }
+    
+    .submit {
+        margin-top: 10px;
+        padding: 5px 15px;
+        border-radius: 6px;
+        color: white;
+        font-family: raleway, sans-serif;
+        opacity: 0.7;
+    }
+    
+    .submit:hover {
+        background-color: rgb(70, 18, 12);
+        color: wheat;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid rgb(70, 18, 12);
     }
 }
