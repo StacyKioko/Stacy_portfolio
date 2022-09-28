@@ -13,7 +13,7 @@
 <body>
     <main>
 
-        <!---- This section has: logo, navigation bar ----->
+        <!---- This section has the navigation bar ----->
         <header>
             <div id="navbar">
                 <ul>
@@ -31,7 +31,7 @@
         <section id="Introduction">
             <div id="Welcome-note">
                 <h1>Hello, my name is <span class="bold">Stacy!</span></h1>
-                <p>A <span class="bold">frontend developer.</span>     Welcome to my portfolio...</p>
+                <p>A <span class="bold title">frontend developer.</span> Welcome to my portfolio...</p>
                 <button id="CV">Download CV</button>
             </div>
             
@@ -131,16 +131,52 @@
             </div>
         </div>
         <div id="pr-button">
-            <div id="project_button">View more</div>
+            <div id="project_button"><span>View more</span></div>
         </div>
         
         </section>
 
         <!--- Contact me section ----->
         <section>
-            
+            <div class="footer">
+                <div class="address">
+                    <div>
+                        <h2 class="h-footer">Mailing Address</h2>
+                    <p class="p-footer">
+                        Stacy Mueke Kioko,<br>
+                        Pangani Girls High School<br>
+                        30152 00100,<br>
+                        Nairobi, Kenya. 
+                    </p>
+                    </div>
+                    
+                </div>                    
+                    <div class="contact">
+                        <div>
+                            <h2 class="h-footer">Contact Me</h2>
+                            <p class="p-footer"><span class="bold"> Email :</span> Stacy.mueke22@gmail.com</p>
+                            <p class="p-footer"><span class="bold">Tell :</span> +2547 9039 1162</p>
+
+                        </div>
+                        <ul class="socials-list">
+                            <li class="platform"><a class="platform" href="https://github.com/StacyKioko" target="_blank" >GitHub</a></li>
+                            <li class="platform"><a class="platform" href="https://twitter.com/Kiokoedu" target="_blank">Twitter</a></li>
+                            <li class="platform"><a class="platform" href="https://www.showwcase.com/stavykioko99" target="_blank">ShowCase</a></li>
+                            <li class="platform"><a class="platform" href="https://www.hackerrank.com/stacykioko_edu" target="_blank">Hacker-rank</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-me">
+                        <div>
+                            <form action="mailto:stacy.mueke22@gmail.com" method="POST" enctype="text/plain" name="EmailForm">
+                                <label class="name" for="name"><input id="name" type="text" placeholder="Full name" required></label>
+                                <label class="email" for="emal"><input id="email" type="email" placeholder="Emal address" required></label>
+                                <label class="message" for="message"><textarea class="message" cols="30" rows="6" placeholder="Please leave your message. I will get back to you shortly." required></textarea></label>
+                                <input type="Submit" value="submit" class="submit">
+                            </form>
+                        </div>      
+                    </div>
+            </div> 
         </section>
     </main>
-    
 </body>
 </html>
