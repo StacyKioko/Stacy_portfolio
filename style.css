@@ -1100,6 +1100,7 @@ textarea {
         margin-bottom: 20px;
         padding-bottom: 40px;
         border-right:0;
+        font-size: 12px;
     }
     
     
@@ -1110,6 +1111,7 @@ textarea {
         letter-spacing: 3px;
         padding-bottom: 40px;
         border-right:0;
+        font-size: 12px;
     }
     
     .platform {
@@ -1118,7 +1120,7 @@ textarea {
         margin-right: 10px;
         margin-bottom; 40px;
         border: 0;
-        font-size: 15px;
+        font-size: 12px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
         display: inline;
@@ -1136,14 +1138,14 @@ textarea {
     
     .h-footer {
         margin-bottom: 15px;
-        font-size: 20px;
+        font-size: 18px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
     }
     
     .p-footer {
         line-height: 1.5em;
-        font-size: 15px;
+        font-size: 12px;
     }
     
     .name {
