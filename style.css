@@ -1100,7 +1100,6 @@ textarea {
         margin-bottom: 20px;
         padding-bottom: 40px;
         border-right:0;
-
     }
     
     
@@ -1119,17 +1118,17 @@ textarea {
         margin-right: 10px;
         margin-bottom; 40px;
         border: 0;
-        font-size: 13px;
+        font-size: 15px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
         display: inline;
         color:aquamarine;
         text-decoration: none;
-        }
+    }
         
     .platform:hover {
         text-align: center;
-        color:red;
+        color: red;
         border-radius: 6px;
         font-size: 20px;
         letter-spacing: 1px;
