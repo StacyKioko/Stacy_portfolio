@@ -373,7 +373,7 @@ h4 {
 
 .address {
     line-height: 1em;
-    margin-top: 10px;
+    margin-top: 40px;
     border-right: 2px solid wheat;
     padding-right: 150px;
     margin-bottom: 20px;
@@ -383,7 +383,7 @@ h4 {
 
 .contact {
     line-height: 1em;
-    margin-top: 10px;
+    margin-top: 40px;
     border-right: 2px solid wheat;
     padding-right: 100px;
     margin-bottom: 40px;
@@ -409,6 +409,9 @@ h4 {
     border-radius: 6px;
     font-size: 20px;
     letter-spacing: 1px;
+}
+.contact-me {
+    margin-top: 40px
 }
 
 .h-footer {
@@ -717,7 +720,7 @@ textarea {
     
     .address {
         line-height: 1.5em;
-        margin-top: 10px;
+        margin-top: 50px;
         margin-bottom: 20px;
         border: 1px solid wheat;
         padding: 20px 30px;
@@ -726,7 +729,7 @@ textarea {
     
     .contact {
         line-height: 2em;
-        margin-top: 10px;
+        margin-top: 50px;
         margin-bottom: 40px;
         letter-spacing: 3px;
         padding-bottom: 30px;
@@ -753,6 +756,10 @@ textarea {
         border-radius: 6px;
         font-size: 20px;
         letter-spacing: 1px;
+    }
+
+    .contact-me {
+        margin-top: 50px;
     }
     
     .h-footer {
