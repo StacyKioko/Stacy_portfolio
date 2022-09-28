@@ -87,10 +87,10 @@ p {
 
 #CV {
     padding: 10px 15px 10px 15px;
-    background-color: transparent;
-    border-radius: 10px;
-    border-color: brown;
+    background-color: rgb(70, 18, 12);
+    border-color: rgb(70, 18, 12);
     border-width: 1px;
+    color: white;
     font-family: raleway, sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
@@ -105,6 +105,7 @@ p {
     font-family: raleway, sans-serif;
     font-size: 18px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 #div-about {
@@ -314,6 +315,7 @@ h4 {
 #project_button {
     padding: 5px 15px 5px 15px;
     width: 120px;
+    margin-bottom: 20px;
     background-color: wheat;
     color: black;
     font-size: 12px;
@@ -410,8 +412,9 @@ h4 {
     font-size: 20px;
     letter-spacing: 1px;
 }
+
 .contact-me {
-    margin-top: 40px
+    margin-top: 40px;
 }
 
 .h-footer {
@@ -1099,7 +1102,7 @@ textarea {
     .address {
         line-height: 1.5em;
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         padding-bottom: 40px;
         border-right:0;
         font-size: 12px;
@@ -1115,12 +1118,16 @@ textarea {
         border-right:0;
         font-size: 12px;
     }
+
+    .socials-list {
+        margin-bottom: 40px;
+
+    }
     
     .platform {
         padding: 0px;
         margin-top: 10px;
         margin-right: 10px;
-        margin-bottom: 40px;
         border: 0;
         font-size: 10px;
         font-family: Raleway, sans-serif;
@@ -1134,7 +1141,7 @@ textarea {
         text-align: center;
         color: red;
         border-radius: 6px;
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
     
@@ -1143,6 +1150,7 @@ textarea {
         font-size: 18px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
+        line-height: 1.5em;
     }
     
     .p-footer {
