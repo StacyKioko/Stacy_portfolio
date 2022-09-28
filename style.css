@@ -720,9 +720,7 @@ textarea {
         margin-top: 10px;
         margin-bottom: 20px;
         border: 1px solid wheat;
-        padding: 20px 40px;
-        height: 180px;
-
+        padding: 20px 30px;
     }
     
     
@@ -731,17 +729,16 @@ textarea {
         margin-top: 10px;
         margin-bottom: 40px;
         letter-spacing: 3px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         border: 1px solid wheat;
         padding: 20px 40px;
-        height: 180px;
     }
     
     .platform {
         padding: 0px;
         margin-top: 10px;
         margin-right: 10px;
-        border-right: 2px solid wheat;
+        border-right: 0;
         font-size: 12px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
@@ -1067,7 +1064,6 @@ textarea {
         color: black;
         font-size: 15px;
         border: 1px solid wheat;
-        border-radius: 6px;
         font-family: raleway, sans-serif;
         letter-spacing: 1px;
     }
@@ -1080,7 +1076,6 @@ textarea {
         color: wheat;
         cursor: pointer;
         border: 1px solid wheat;
-        border-radius: 6px;
     }
     .footer {
         width: 100%;
@@ -1120,7 +1115,7 @@ textarea {
         margin-right: 10px;
         margin-bottom: 40px;
         border: 0;
-        font-size: 12px;
+        font-size: 10px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
         display: inline;
