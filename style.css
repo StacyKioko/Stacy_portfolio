@@ -741,8 +741,8 @@ textarea {
         padding: 0px;
         margin-top: 10px;
         margin-right: 10px;
-        border: 0;
-        font-size: 15px;
+        border-right: 2px solid wheat;
+        font-size: 12px;
         font-family: Raleway, sans-serif;
         letter-spacing: 1px;
         display: inline;
