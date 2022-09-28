@@ -1101,7 +1101,7 @@ textarea {
         border-bottom: 2px solid wheat;
         padding-bottom: 40px;
         border-right:0;
-        width: 500px;
+        width: fit-content;
 
     }
     
@@ -1114,7 +1114,7 @@ textarea {
         border-bottom: 2px solid wheat;
         padding-bottom: 40px;
         border-right:0;
-        width: 500px;
+        width: fit-content;
     }
     
     .platform {
