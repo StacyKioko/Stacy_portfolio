@@ -215,6 +215,7 @@ p {
 
 .thecard:hover {
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 .thefront {
@@ -364,8 +365,8 @@ h4 {
 .footer {
     width: 100%;
     background-color: #372c19;
-    height: 100%;
-    padding: 20px 50px;
+    height: 250px;
+    padding: 0px 50px;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +415,7 @@ h4 {
 }
 
 .contact-me {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .h-footer {
